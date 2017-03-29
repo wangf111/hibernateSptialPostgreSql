@@ -14,6 +14,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+
 /**
  * Created by wangf on 2017/3/27.
  */
@@ -34,6 +35,9 @@ System.out.println(kml.exists());
         appUser2.setGeometry(geometry);
         appUser2.setUsername("geometry"+i++);
         appUser2s.add(appUser2);
+        if (i > 200) {
+          break;
+        }
 
       }
     } catch (Exception e) {

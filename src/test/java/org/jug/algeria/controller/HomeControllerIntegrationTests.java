@@ -3,6 +3,7 @@ package org.jug.algeria.controller;
 
 import org.jug.algeria.Application;
 import org.jug.algeria.HomeService;
+import org.jug.algeria.batch.BatchService;
 import org.jug.algeria.domain.AppUser2;
 import org.jug.algeria.repository.User2Repository;
 import org.junit.Assert;
@@ -36,5 +37,6 @@ public class HomeControllerIntegrationTests {
     Iterable<AppUser2> re = user2Repository.save(user2s);
     Assert.assertNotNull(re);
   }
+
 
 }
